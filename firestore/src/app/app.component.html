@@ -1,0 +1,17 @@
+<ul *ngFor="let post of posts | async">
+  <li>
+    <strong>{{ post.title}}</strong>
+    <br>
+    {{post.content}}
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let mispost of misposts | async">
+    <strong>{{ mispost.titulo}}</strong>
+    <br>
+    {{mispost.contenido}}
+  </li>
+</ul>
+
